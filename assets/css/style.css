@@ -193,6 +193,16 @@ address a:hover {
 		width: 100%;
 	}
 
+	#first-project img {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.img-box header {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	.projects {
 		padding: 20px 0px;
 		width: 100%;
@@ -204,14 +214,6 @@ address a:hover {
 }
 
 @media screen and (max-width: 905px) {
-	img {
-		margin-left: 4px;
-	}
-
-	.img-box header {
-		margin-left: 4px;
-	}
-
 	#first-project img {
 		width: 100%;
 	}
