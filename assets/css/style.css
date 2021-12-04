@@ -71,7 +71,17 @@ aside {
 	padding: 20px 0px 20px 20px;
 	border-right: solid 3px var(--Hover);
 	width: 12.5%;
-	font-size: 18px;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+#work {
+	text-decoration: none;
+	color: var(--Gray);
+}
+
+#work:hover {
+	color: var(--Hover);
 }
 
 /* section container */
@@ -164,7 +174,6 @@ address a {
 
 address a:hover {
 	color: var(--Hover);
-	text-shadow: none;
 }
 
 /* media query */
