@@ -101,7 +101,6 @@ aside {
 }
 
 .about-me img {
-	width: 450px;
 	height: 250px;
 	border-radius: 15px;
 	padding: 10px;
@@ -139,7 +138,7 @@ aside {
 }
 
 #first-project img {
-	width: 900px;
+	width: 100%;
 	height: auto;
 	border-radius: 15px;
 }
@@ -204,14 +203,17 @@ address a:hover {
 	}
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 905px) {
 	img {
-		width: 400px;
-		height: 200px;
+		margin-left: 4px;
+	}
+
+	.img-box header {
+		margin-left: 4px;
 	}
 
 	#first-project img {
-		width: 800px;
+		width: 100%;
 	}
 }
 
