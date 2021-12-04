@@ -33,12 +33,15 @@ header h1 {
 	padding: 5px;
 }
 
-nav a {
-	color: var(--Gray);
-	text-decoration: none;
-	display: flex;
-	font-weight: bold;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+nav {
+	position: sticky;
+	top: 0px;
+	z-index: 999;
+	padding: 3px;
+	background-image: url("../images/header-background.jpg");
+	background-size: cover;
+	background-position: 80%;
+	background-attachment: fixed;
 }
 
 nav ul {
@@ -49,6 +52,9 @@ nav ul {
 }
 
 nav ul li a {
+	color: var(--Gray);
+	text-decoration: none;
+	display: flex;
 	padding: 5px;
 	font-size: 28px;
 	font-weight: bold;
@@ -60,17 +66,6 @@ nav ul li a:hover {
 	text-shadow: none;
 }
 
-.sticky {
-	position: sticky;
-	top: 0px;
-	z-index: 999;
-	padding: 3px;
-	background-image: url("../images/header-background.jpg");
-	background-size: cover;
-	background-position: 80%;
-	background-attachment: fixed;
-}
-
 /* side panel */
 aside {
 	padding: 20px 0px 20px 20px;
@@ -79,6 +74,7 @@ aside {
 	font-size: 18px;
 }
 
+/* section container */
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -95,17 +91,23 @@ aside {
 }
 
 .about-me img {
-	display: flex;
-	flex-wrap: wrap;
+	width: 450px;
+	height: 250px;
+	border-radius: 15px;
+	padding: 10px;
 }
 
 /* work section */
-.links {
+.projects {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 40px;
 	width: 87.5%;
 	justify-content: center;
+}
+
+.img-box {
+	position: relative;
 }
 
 .img-box header {
@@ -126,26 +128,21 @@ aside {
 	box-shadow: none;
 }
 
-.img-box:hover img {
-	padding: 5px;
-	transition: 0.4s; 
+#first-project img {
+	width: 900px;
+	height: auto;
+	border-radius: 15px;
 }
-
-.img-box {
-	position: relative;
-}
-
-img {
+.img-box img {
 	width: 450px;
 	height: 250px;
 	border-radius: 15px;
 	padding: 10px;
 }
 
-#first-project img {
-	width: 900px;
-	height: auto;
-	border-radius: 15px;
+.img-box:hover img {
+	padding: 5px;
+	transition: 0.4s; 
 }
 
 /* contact section */
@@ -182,14 +179,13 @@ address a:hover {
 
 	.container {
 		justify-content: center;
-		text-align: center;
 	}
 
 	.about-me {
 		width: 100%;
 	}
 
-	.links {
+	.projects {
 		padding: 20px 0px;
 		width: 100%;
 	}
