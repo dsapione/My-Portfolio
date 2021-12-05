@@ -92,7 +92,6 @@ aside {
 
 /* about section */
 .about-me {
-	display:flex;
 	line-height: 1.5;
 	font-size: 20px;	
 	padding: 20px 40px;
@@ -106,13 +105,17 @@ aside {
 	padding: 10px;
 }
 
+.float {
+	float: left;
+}
+
 /* work section */
 .projects {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 40px;
 	width: 87.5%;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .img-box {
@@ -140,10 +143,10 @@ aside {
 #first-project img {
 	width: 100%;
 	height: auto;
-	border-radius: 15px;
 }
+
 .img-box img {
-	width: 450px;
+	width: 485px;
 	height: 250px;
 	border-radius: 15px;
 	padding: 10px;
@@ -152,6 +155,10 @@ aside {
 .img-box:hover img {
 	padding: 5px;
 	transition: 0.4s; 
+}
+
+.alignment {
+	width: 50%;
 }
 
 /* contact section */
@@ -193,19 +200,17 @@ address a:hover {
 		width: 100%;
 	}
 
-	#first-project img {
-		margin-left: 20px;
-		margin-right: 20px;
+	#first-project {
+		margin: auto;
 	}
 
 	.img-box header {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin: auto;
 	}
 
 	.projects {
 		padding: 20px 0px;
-		width: 100%;
+		width: 95%;
 	}
 
 	address {
@@ -214,10 +219,49 @@ address a:hover {
 }
 
 @media screen and (max-width: 905px) {
-	#first-project img {
-		width: 100%;
-	}
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 600px) {
+	header h1 {
+		font-size: 30px;
+	}
+
+	nav ul li a {
+		font-size: 23px;
+	}
+
+	aside {
+		font-size: 22px;
+	}
+
+	.about-me {
+		line-height: 1.5;
+		font-size: 15px;
+	}
+
+	.about-me img {
+		height: 150px;
+	}
+
+	.projects {
+		padding-bottom: 0px;
+	}
+
+	.img-box img {
+		width: 100%;
+		height: auto; 
+	}
+
+	.img-box header {
+		font-size: 15px;
+	}
+
+	address {
+		width: 335px;
+		line-height: 1.5;
+	}
+
+	address a {
+		font-size: 15px;
+	}
 }
