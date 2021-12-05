@@ -218,9 +218,6 @@ address a:hover {
 	}
 }
 
-@media screen and (max-width: 905px) {
-}
-
 @media screen and (max-width: 600px) {
 	header h1 {
 		font-size: 30px;
