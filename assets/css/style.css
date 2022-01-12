@@ -158,10 +158,6 @@ aside {
 	transition: 0.4s; 
 }
 
-.alignment {
-	width: 50%;
-}
-
 /* contact section */
 address {
 	display: flex;
